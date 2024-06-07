@@ -55,7 +55,7 @@ input, button {
     content: url("Icons/explorer.png");
 }
 .start {
-    background: #1e2a3d;
+    background: #396bbc;
     height: calc(100vh - 80px - 35px);
     width: 500px;
     position: fixed;
