@@ -1,0 +1,85 @@
+@import url("Animations/hover.css");
+body {
+    overflow: hidden;
+    font-family: Segoe UI Light, Segoe Ui, Arial;
+    color: white;
+    cursor: url("Cursors/default.webp"), auto;
+    background: url("Images/bg.jpg");
+    margin: 8px;
+    padding: 0;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input, button {
+    cursor: url("Cursors/default.webp"), auto;
+}
+#desktop-icon {
+    height: 45px;
+    width: 45px;
+}
+.taskbar {
+    background: #396bbc;
+    height: 35px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.taskbar .taskbarApp {
+    height: 35px;
+    width: 35px;
+    transition: ease-in-out 0.2s;
+}
+.taskbar .startNow {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    content: url("Icons/start.png");
+    transition: ease-in-out 0.2s;
+}
+.taskbar .ms-edge {
+    position: absolute;
+    top: 0;
+    left: 37px;
+    content: url("Icons/ms-edge.png");
+}
+.taskbar .explorer {
+    position: absolute;
+    top: 0;
+    left: 72px;
+    content: url("Icons/explorer.png");
+}
+.start {
+    background: #1e2a3d;
+    height: calc(100vh - 80px - 35px);
+    width: 500px;
+    position: fixed;
+    bottom: 35px;
+    left: 0;
+    display: none;
+}
+.startup {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ms-edge-application {
+    background: white;
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 10px;
+    left: 17%;
+    color: black;
+    z-index: 1;
+    display: none;
+}

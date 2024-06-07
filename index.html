@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Windows 8.1
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Icons/start.png">
+</head>
+<body>
+    <span class="recycle_bin">
+        <img src="Icons/recycle_bin.png" id="desktop-icon">
+        <br>
+        <span>
+            Recycle
+            <br>
+            &ensp;&nbsp;Bin
+        </span>
+    </span>
+    <div class="ms-edge-application">
+        <span class="title" style="position: absolute; top: 1px; left: 5px;">
+            Internet Explorer
+        </span>
+        <button onclick="document.querySelector('.ms-edge-application').style.display = 'none';" style="position: absolute; top: 1px; right: 5px; color: black; background: transparent; border: none; font-size: 1.5em;">
+            &times;
+        </button>
+        <input type="text" id="web-address" placeholder="Search something or type a URL..." value="https://bing.com" size="105" style="position: absolute; top: calc(1.5em + 2px); left: 5px;">
+        <button id="go" style="position: absolute; top: calc(1.5em + 2px); right: 5px;">
+            Go!
+        </button>
+        <iframe src="https://bing.com" style="height: 425px; width: 99.5%; position: absolute; top: 50px; left: 0;" id="website"></iframe>
+        <span style="position: absolute; bottom: 5px; left: 5px;">
+            Internet connection well connected, secured.
+        </span>
+    </div>
+    <div class="start">
+        <img height="35" width="35" src="Images/profile.jpg" style="position: absolute; bottom: 10px; left: 5px;">
+        <button style="position: absolute; bottom: 45px; left: 5px; background: transparent; border: none; color: white; font-size: 2.5em;" onclick="document.querySelector('.start').style.display = 'none';">&times;</button>
+        <div style="position: absolute; top: 0; left: 40px; border: 1px solid white; height: calc(100vh - 80px - 35px); width: 170px; color: white;">
+        <p>
+            E
+        </p>
+        <hr>
+        <span>
+            Windows Explorer
+        </span>
+        <br>
+        <span>
+            Explorer
+        </span>
+        <br>
+        <span>
+            explorer.exe
+        </span>
+        <br>
+        <span>
+            explorer.exe/danger
+        </span>
+        <hr>
+        <p>
+            I
+        </p>
+        <hr>
+        <span onclick="taskbar.browser()">
+            Internet Explorer
+        </span>
+    </div>
+    <div class="cardMusic" style="background: rgb(6, 144, 6); height: 100px; width: 280px; position: absolute; top: 0px; left: 215px; color: white;">
+        <span>
+            Music
+        </span>
+        <br>
+        <button id="play">
+            Play
+        </button>
+        <br>
+        <button id="pause">
+            Pause
+        </button>
+    </div>
+    </div>
+    <div class="taskbar">
+        <span class="startNow taskbarApp"></span>
+        <span class="ms-edge taskbarApp" onclick="taskbar.browser()"></span>
+        <span class="explorer taskbarApp"></span>
+        <span class="time" style="position: absolute; top: -5px; right: 8px;"></span>
+    </div>
+    <div class="startup">
+        <center>
+            <br>
+            <br>
+            <br>
+            <img height="150" src="Icons/windows8.png">
+            <br>
+            <br>
+            <br>
+            <br>
+            <span style="font-size: 2.5em; color: white;">
+            Loading...
+            </span>
+            <br>
+            <br>
+            <br>
+            <button style="color: white; background: grey; border: none; font-size: 1.5em; display: none; border-radius: 5px; cursor: url('Cursors/interact.webp'), auto;" onclick="document.querySelector('.startup').style.display = 'none';" id="start">
+            Ready? Start!
+            </button>
+        </center>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
