@@ -8,11 +8,14 @@ var taskbar = {
     },
     browser: function() {
         document.querySelector(".ms-edge-application").style.display = "block";
+    },
+    explorer: function() {
+        document.querySelector(".file-explorer").style.display = "block";
     }
 }
-var startbuttons = document.querySelector(".taskbar .startNow");
+var startbuttons = document.querySelector(".taskbar .startNow")
 startbuttons.addEventListener("click", () => {
-    document.querySelector(".start").style.display = "block";
+    taskbar.startSearch();
 });
 var browser = document.querySelector(".ms-edge-application");
 setTimeout(() => {
