@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="Icons/start.png">
 </head>
-<body oncontextmenu="return false">
+<body>
     <span class="recycle_bin">
         <img src="Icons/recycle_bin.png" id="desktop-icon">
         <br>
@@ -35,56 +35,66 @@
             Internet connection well connected, secured.
         </span>
     </div>
-    <div class="start">
-        <img height="35" width="35" src="Images/profile.jpg" style="position: absolute; bottom: 10px; left: 5px;">
-        <button style="position: absolute; bottom: 45px; left: 5px; background: transparent; border: none; color: white; font-size: 2.5em;" onclick="document.querySelector('.start').style.display = 'none';">&times;</button>
-        <div style="position: absolute; top: 0; left: 40px; border: 1px solid white; height: calc(100vh - 80px - 35px); width: 170px; color: white;">
-        <p>
-            E
-        </p>
+    <div class="file-explorer">
+        <button onclick="document.querySelector('.file-explorer').style.display = 'none';" style="font-size: 1.5em; color: black; background: transparent; border: none; position: absolute; top: 1px; right: 5px;">
+            &times;
+        </button>
+        <button>File</button>
+        <button>Edit</button>
+        <button>View</button>
+        <button>History</button>
         <hr>
-        <span>
-            Windows Explorer
-        </span>
+        <img height="100" width="100" src="Icons/my-computer.png" style="background:rgb(3, 95, 144);">
         <br>
         <span>
-            Explorer
-        </span>
-        <br>
-        <span>
-            explorer.exe
-        </span>
-        <br>
-        <span>
-            explorer.exe/danger
-        </span>
-        <hr>
-        <p>
-            I
-        </p>
-        <hr>
-        <span onclick="taskbar.browser()">
-            Internet Explorer
+            Computer (C:/)
         </span>
     </div>
-    <div class="cardMusic" style="background: rgb(6, 144, 6); height: 100px; width: 280px; position: absolute; top: 0px; left: 215px; color: white;">
-        <span>
+    <div class="start">
+        <span style="font-size: 3em; position: absolute; top: 40px; left: 40px;">
+            Start
+        </span>
+        <img height="35" width="35" src="Images/profile.jpg" style="position: absolute; top: 10px; right: calc(2.5em + 5px);">
+        <button style="position: absolute; top: 10px; right: 5px; background: transparent; border: none; color: white; font-size: 2.5em;" onclick="document.querySelector('.start').style.display = 'none';">&times;</button>
+    <div class="cardMusic" style="background: rgb(6, 144, 6); height: 300px; width: 480px; position: absolute; top: 0px; left: 215px; color: white;">
+        <span style="font-size: 1.5em;">
             Music
         </span>
         <br>
-        <button id="play">
+        <button id="play" style="font-size: 1.5em;">
             Play
         </button>
         <br>
-        <button id="pause">
+        <button id="pause" style="font-size: 1.5em;">
             Pause
         </button>
+    </div>
+    <div class="cardBrowser" style="background: rgb(3, 95, 144); height: 130px; width: 480px; position: absolute; top: 306px; left: 215px; color: white;" onclick="taskbar.browser()">
+        <center>
+            <br>
+            <img src="Icons/ms-edge.png" height="50" width="50">
+            </center>
+        <span style="position: absolute; bottom: 5px; left: 5px;">
+            Internet Explorer
+        </span>
+    </div>
+    <div class="cardExplorer" style="background: rgb(144, 144, 3); height: 130px; width: 480px; position: absolute; top: 442px; left: 215px; color: white;" onclick="taskbar.explorer()">
+        <center>
+            <br>
+            <img src="Icons/explorer.png" height="50" width="50">
+            </center>
+        <span style="position: absolute; bottom: 5px; left: 5px;">
+            File Explorer
+        </span>
     </div>
     </div>
     <div class="taskbar">
         <span class="startNow taskbarApp"></span>
+        <span class="taskview taskbarApp"></span>
+        <span class="cortana taskbarApp"></span>
         <span class="ms-edge taskbarApp" onclick="taskbar.browser()"></span>
-        <span class="explorer taskbarApp"></span>
+        <span class="ms-edge-old taskbarApp" onclick="taskbar.browser()"></span>
+        <span class="explorer taskbarApp" onclick="taskbar.explorer()"></span>
         <span class="time" style="position: absolute; top: -5px; right: 8px;"></span>
     </div>
     <div class="startup">
