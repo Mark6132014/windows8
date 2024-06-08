@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="Icons/start.png">
 </head>
-<body>
+<body oncontextmenu="return false">
     <span class="recycle_bin">
         <img src="Icons/recycle_bin.png" id="desktop-icon">
         <br>
@@ -17,6 +17,17 @@
             Recycle
             <br>
             &ensp;&nbsp;Bin
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="virtualbox" onclick="document.querySelector('.virtualbox-app').style.display = 'block';">
+        <img src="Icons/virtualbox.jpg" id="desktop-icon">
+        <br>
+        <span>
+            Virtual
+            <br>
+            &nbsp;box
         </span>
     </span>
     <div class="ms-edge-application">
@@ -49,6 +60,15 @@
         <span>
             Computer (C:/)
         </span>
+    </div>
+    <div class="virtualbox-app">
+        <center>
+            <button onclick="document.querySelector('.virtualbox-app').style.display = 'none';">
+                Close
+            </button>
+        </center>
+        <hr>
+        <iframe height="505" width="1098" src="https://mark6132014.github.io/windowsEmulators/"></iframe>
     </div>
     <div class="start">
         <span style="font-size: 3em; position: absolute; top: 40px; left: 40px;">
