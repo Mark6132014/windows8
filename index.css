@@ -55,13 +55,14 @@ input, button {
     content: url("Icons/explorer.png");
 }
 .start {
-    background: #396bbc;
-    height: calc(100vh - 80px - 35px);
-    width: 500px;
+    background: #a91489;
+    height: 100vh;
+    width: 100%;
     position: fixed;
-    bottom: 35px;
+    top: 0;
     left: 0;
     display: none;
+    z-index: 1;
 }
 .startup {
     background: black;
@@ -82,4 +83,15 @@ input, button {
     color: black;
     z-index: 1;
     display: none;
+}
+.file-explorer {
+    background: white;
+    height: 500px;
+    width: 550px;
+    position: absolute;
+    top: 10px;
+    left: 15%;
+    color: black;
+    display: none;
+    z-index: 1;
 }
